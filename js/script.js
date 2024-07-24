@@ -27,3 +27,5 @@ document.getElementById('phone-number').addEventListener('click', function() {
       copiedMessage.style.display = 'none';
     }, 2000); // Hide the message after 2 seconds
   });
+
+  

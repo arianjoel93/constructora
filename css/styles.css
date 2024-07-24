@@ -113,6 +113,9 @@ header {
     background-color: #FBB101;
     margin-bottom: 10px;
 }
+header a{
+    text-decoration: none;
+}
 
 @media (max-width: 768px) {
     header {
@@ -194,6 +197,18 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     padding-left: 200px;
+    animation: zoomEffect 10s infinite alternate;
+}
+@keyframes zoomEffect {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -515,6 +530,8 @@ footer {
     }
 
 }
+
+
 
 .contaner-roof img {
     width: 60%;
