@@ -45,6 +45,7 @@ html {
     box-sizing: border-box;
     /* Hack para Box Model **/
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -94,6 +95,7 @@ h1 {
         font-size: 40px !important;
     }
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 30px !important;
@@ -189,6 +191,7 @@ footer {
     width: 100%;
     background-image: url('/image/2x/img1@2x.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     padding-left: 200px;
 }
@@ -196,12 +199,18 @@ footer {
 @media (max-width: 1400px) {
     .home-main {
         padding: 5rem;
-        
+
     }
 }
 
 .header-left {
     cursor: pointer;
+}
+
+.header-left:hover {
+    color: rgb(220, 220, 220);
+    transition: all 0.5s ease;
+    color: rgb(179, 146, 26);
 }
 
 .home-main-text {
@@ -220,6 +229,7 @@ footer {
 .home-main-text-subtitle {
     width: min(95%, 920px);
 }
+
 .home-main-text-subtitle h3 {
     font-size: 27px;
     font-weight: 400;
@@ -244,14 +254,18 @@ footer {
         padding: 5rem 2rem;
         height: auto;
     }
-    .home-main-text{
+
+    .home-main-text {
         text-align: center;
     }
+
     .home-main-text h2 {
         font-size: 18px;
     }
+
     .home-main-text-subtitle h3 {
-        font-size: 16px}
+        font-size: 16px
+    }
 }
 
 /* end home */
@@ -327,9 +341,11 @@ footer {
         padding: 1rem 1rem;
         width: 42%;
     }
+
     .about-content-left-line {
         gap: 2rem;
     }
+
     .about-content-left-line p {
         font-size: 18px;
         font-weight: 400;
@@ -366,12 +382,15 @@ footer {
         padding-left: 0;
         font-size: 26px !important;
     }
-    .about-content{
+
+    .about-content {
         background-size: 50% 100%;
     }
+
     .about-content-left {
         width: 50%;
     }
+
     .about-content-left-line p {
         font-size: 12px;
     }
@@ -415,31 +434,36 @@ footer {
     .container-realiable-text strong {
         font-size: 30px;
     }
+
     .container-realiable-text p {
         font-size: 14px;
     }
+
     .about-content-left {
         padding: 0rem 2rem;
         gap: 1rem;
     }
 }
-@media (max-width: 480px) {
-  .container-realiable{
-    height: 162px;
-  }
-  .container-realiable-text strong {
-    font-size: 20px;
-}
-.container-realiable-text p {
-    font-size: 12px;
-    width: 90%;
-}
-.about-content-left {
-    padding: 0rem 1rem;
-    gap: 1rem;
-}
-}
 
+@media (max-width: 480px) {
+    .container-realiable {
+        height: 162px;
+    }
+
+    .container-realiable-text strong {
+        font-size: 20px;
+    }
+
+    .container-realiable-text p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .about-content-left {
+        padding: 0rem 1rem;
+        gap: 1rem;
+    }
+}
 
 
 /* end about */
@@ -447,8 +471,8 @@ footer {
 /* Roof */
 .contaner-roof {
     width: 100%;
-    /* height: 90vh; */
     background-image: url('/image/2x/img3@2x.png');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -464,11 +488,13 @@ footer {
     color: white;
     margin: 0;
 }
+
 .contaner-roof p {
     color: white;
     font-size: 40px;
     font-weight: 400;
 }
+
 @media (max-width: 768px) {
 
     .contaner-roof {
@@ -479,18 +505,23 @@ footer {
     }
 
     .contaner-roof h2 {
-        font-size: 20px;}
+        font-size: 20px;
+    }
 
     .contaner-roof p {
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-        }
-  
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
 }
 
 .contaner-roof img {
     width: 60%;
+}
+.contaner-roof img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 .about-phone {
@@ -528,6 +559,19 @@ footer {
     font-size: 28px;
 }
 
+.about-phone-text strong:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.copied-message {
+    display: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
 .services-container {
     display: flex;
     min-height: 200px;
@@ -546,6 +590,10 @@ footer {
     color: white;
     gap: 3rem;
 }
+.services-container-card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
 
 .services-container-card img {
     width: 80px;
@@ -554,10 +602,11 @@ footer {
 
 @media (max-width: 1080px) {
     .about_header {
-        padding: 0 ;
+        padding: 0;
         align-items: center;
         justify-content: center;
     }
+
     .about-phone {
         flex-direction: column;
         height: auto;
@@ -565,10 +614,12 @@ footer {
         padding: 2rem;
         text-align: center;
     }
+
     .about-phone img {
         width: 100px;
         height: 100px;
     }
+
     .about-phone-text h3 {
         font-size: 30px;
     }
