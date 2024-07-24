@@ -94,6 +94,11 @@ h1 {
         font-size: 40px !important;
     }
 }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px !important;
+    }
+}
 
 /* Header */
 header {
@@ -215,6 +220,11 @@ footer {
 .home-main-text-subtitle {
     width: min(95%, 920px);
 }
+.home-main-text-subtitle h3 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
 
 @media (max-width: 1280px) {
     .home-main-text h2 {
@@ -240,17 +250,9 @@ footer {
     .home-main-text h2 {
         font-size: 18px;
     }
+    .home-main-text-subtitle h3 {
+        font-size: 16px}
 }
-
-
-
-.home-main-text-subtitle h3 {
-    font-size: 27px;
-    font-weight: 400;
-    margin-top: 2rem;
-}
-
-
 
 /* end home */
 
@@ -432,7 +434,7 @@ footer {
 }
 
 .contaner-roof img {
-    width: 40%;
+    width: 60%;
 }
 
 .about-phone {
