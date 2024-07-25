@@ -186,6 +186,7 @@ footer {
 .home-main {
     height: calc(100vh - 90px);
     width: 100%;
+    min-height: 300px;
     background-image: url('/image/2x/img1@2x.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -250,7 +251,7 @@ footer {
 @media (max-width: 768px) {
     .home-main {
         padding: 5rem 2rem;
-        /* height: 100%; */
+        height: 100%;
     }
 
     .home-main-text {
@@ -602,8 +603,10 @@ footer {
     font-size: 16px;
 }
 
-.about-phone-text strong {
+.about-phone-text a {
     font-size: 28px;
+    text-decoration: none;
+    color: white;
 }
 
 .about-phone-text strong:hover {
@@ -648,6 +651,13 @@ footer {
     height: 80px;
 }
 
+
+@media (max-width: 1600px) {
+    .about_header {
+        padding: 0 10rem;
+    }
+}
+
 @media (max-width: 1080px) {
     .about_header {
         padding: 0;
@@ -683,6 +693,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 @media (max-width: 768px) {
     .container-carousel {
         padding: 1rem;
@@ -710,76 +721,86 @@ footer {
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .carousel-carousel-title p {
+        font-size: 16px;
+    }
 
-.carousel-sliders {
-    max-width: 1400px;
-    width: 100%;
-    display: flex;
-    gap: 4rem 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: center;
+    .carousel-carousel-title h2 {
+        font-size: 20px;
+    }
+
 }
+    .carousel-sliders {
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        gap: 4rem 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
 
-.carousel-card {
-    width: 450px;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.carousel-card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-
-@media (max-width: 480px) {
     .carousel-card {
-        width: 350px;
-        height: auto;
+        width: 450px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .carousel-card-text {
+        display: flex;
         flex-direction: column;
+        align-items: start;
+        justify-content: center;
     }
-    .carousel-card-text{
-        justify-content: start;
+
+    @media (max-width: 480px) {
+        .carousel-card {
+            width: 350px;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .carousel-card-text {
+            justify-content: start;
+        }
     }
-}
 
-.carousel-card:hover {
-    margin-top: -5px;
-    transition: all 0.5s ease;
-}
+    .carousel-card:hover {
+        margin-top: -5px;
+        transition: all 0.5s ease;
+    }
 
 
-.carousel-container-image {
-    min-width: 150px !important;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FBB101;
-}
+    .carousel-container-image {
+        min-width: 150px !important;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FBB101;
+    }
 
-.carousel-card-text h2 {
-    font-size: 18px;
-    margin-bottom: 1rem;
-    color: #FBB101;
-    font-weight: bold;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-}
+    .carousel-card-text h2 {
+        font-size: 18px;
+        margin-bottom: 1rem;
+        color: #FBB101;
+        font-weight: bold;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+    }
 
-.carousel-carousel-line {
-    width: 50px;
-    height: 4px;
-    background-color: #FBB101;
-    margin-bottom: 1rem;
-}
+    .carousel-carousel-line {
+        width: 50px;
+        height: 4px;
+        background-color: #FBB101;
+        margin-bottom: 1rem;
+    }
 
-.carousel-card-text p {
-    font-size: 12px;
-    text-align: start;
-}
+    .carousel-card-text p {
+        font-size: 12px;
+        text-align: start;
+    }
