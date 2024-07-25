@@ -377,20 +377,35 @@ footer {
         padding-left: 0;
         font-size: 26px !important;
     }
-
+    
     .about-content {
         background-size: 50% 100%;
+        height: 600px;
     }
-
+    
     .about-content-left {
         width: 50%;
     }
-
+    
     .about-content-left-line p {
         font-size: 12px;
     }
-
-
+}
+@media (max-width: 1080px) {
+    .about-content {
+        height: 500px;
+    }
+}
+@media (max-width: 920px) {
+    .about-content {
+        height: 400px;
+    }
+}
+@media (max-width: 768px) {
+        .about-content {
+            background-size: 80% 100%;
+        }
+  
 }
 
 
@@ -406,6 +421,12 @@ footer {
 @media (max-width: 1600px) {
     .container-realiable {
         height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-realiable {
+        height: 127px;
     }
 }
 
@@ -427,7 +448,7 @@ footer {
 
 @media (max-width: 920px) {
     .container-realiable-text strong {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .container-realiable-text p {
@@ -440,24 +461,30 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    .container-realiable {
-        height: 162px;
+@media (max-width: 768px) {
+    .about-content-left {
+        padding: 0rem 1rem;
+        gap: 1rem;
+        background: #00000096;
+        border-radius: 10px;
+        width: 80%;
     }
+}
+
+@media (max-width: 480px) {
+    /* .container-realiable {
+        height: 162px;
+    } */
 
     .container-realiable-text strong {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .container-realiable-text p {
         font-size: 12px;
-        width: 90%;
+        width: 75%;
     }
 
-    .about-content-left {
-        padding: 0rem 1rem;
-        gap: 1rem;
-    }
 }
 
 
@@ -475,7 +502,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem
+    padding: 10rem;
+    text-align: center;
 }
 
 .contaner-roof h2 {
@@ -532,7 +560,7 @@ footer {
 
 .about-phone {
     display: flex;
-    height: 400px;
+    height: 500px;
     width: 100%;
     gap: 20rem;
     justify-content: center;
