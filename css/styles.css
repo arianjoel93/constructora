@@ -709,7 +709,7 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin: 1rem;
+    margin-bottom: 10rem;
 }
 
 .carousel-carousel-title h2 {
